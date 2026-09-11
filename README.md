@@ -1,8 +1,17 @@
 # Table & Tap
 
-Suggest beer styles for whatever’s on the plate.
+Table & Tap is a simple React + Vite app that recommends beer styles based on
+what food you are eating.
 
-Pick a food category — burgers, sushi, BBQ, cheese boards, and more — and get three beer styles with short explanations of why they work.
+Select a food type (like burgers, sushi, spicy food, seafood, or desserts) and
+the app returns three suggested beer styles with quick pairing explanations.
+
+## Features
+
+- Food-to-beer recommendation engine
+- Pairing notes that explain each suggestion
+- Easy-to-edit pairing data in a single file
+- Lightweight frontend stack (React + Vite)
 
 ## Run locally
 
@@ -11,27 +20,37 @@ npm install
 npm run dev
 ```
 
-Open the URL Vite prints (usually `http://localhost:5173`).
+Open the local URL shown in the terminal (usually `http://localhost:5173`).
 
-## Build
+## Build for production
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## Upload to GitHub
+## Project structure
 
-1. Create a new empty repository on GitHub (no README).
-2. From this folder:
+- `src/App.jsx`: UI and selection logic
+- `src/data/pairings.js`: beer pairing dataset
+- `src/styles.css`: app styling
+
+## Create GitHub project
+
+1. Create an empty GitHub repository named `table-and-tap`.
+2. Connect this project to the repository:
 
 ```bash
 git remote add origin https://github.com/YOUR_USERNAME/table-and-tap.git
 git push -u origin main
 ```
 
-(If `.git` is missing, run `git init -b main`, then `git add .`, `git commit -m "Initial commit"`, then the commands above.)
+If this directory is not initialized as a git repo yet:
 
-## Notes
-
-Pairings live in `src/data/pairings.js` — easy to expand or tweak. Suggestions are beer *styles*, not brands.
+```bash
+git init -b main
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/YOUR_USERNAME/table-and-tap.git
+git push -u origin main
+```
