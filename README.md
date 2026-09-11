@@ -3,13 +3,14 @@
 Table & Tap is a simple React + Vite app that recommends beer styles based on
 what food you are eating.
 
-Select a food type (like burgers, sushi, spicy food, seafood, or desserts) and
-the app returns three suggested beer styles with quick pairing explanations.
+Users choose food type, preparation method, spice level, and richness, then the
+app calculates the best beer style match and shows backup options.
 
 ## Features
 
-- Food-to-beer recommendation engine
-- Pairing notes that explain each suggestion
+- Interactive multi-option pairing quiz
+- Single best beer recommendation with score
+- Backup recommendations in case users want alternatives
 - Easy-to-edit pairing data in a single file
 - Lightweight frontend stack (React + Vite)
 
